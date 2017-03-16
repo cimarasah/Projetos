@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/materialize/materialize")
+   @* @Styles.Render("~/Content/materialize/materialize")*@
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper navbar-fixed nav  red darken-4 ">
+            <a href="" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="">sass</a></li>
+                <li><a href="">sass <span class="new badge">4</span></a></li>
+                <li><a href="">sass</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="row">
+        
+
+        <div class="col s12 m4 l2" style="margin-right:15px;">
+           <ul id="slide-out" class="side-nav fixed" style="position:absolute;">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Cadastro<i class="mdi-navigation-arrow-drop-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="~/Views/Paciente/Index.cshtml" class="waves-effect waves-teal">Paciente</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+             
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+
+        </div>
+            
+        <div class="col s12 m8 l8">
+            <br />
+            <br />
+            @RenderBody()
+        </div>
+
+    </div>
+
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/materialize")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")    
+    @RenderSection("scripts", required: false)
+    <script>
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 16 // Creates a dropdown of 15 years to control year
+        });
+        $(".button-collapse").sideNav();
+    
+        $('.datepicker').pickadate({
+            selectMonths: true,//Creates a dropdown to control month
+            selectYears: 16,//Creates a dropdown of 15 years to control year
+            //The title label to use for the month nav buttons
+            labelMonthNext: 'Próximo Mês',
+            labelMonthPrev: 'Mês Anterior',
+            //The title label to use for the dropdown selectors
+            labelMonthSelect: 'Selecione o Mês',
+            labelYearSelect: 'Selecione o ano',
+            //Months and weekdays
+            monthsFull: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+            weekdaysFull: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+            weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+            //Materialize modified
+            weekdaysLetter: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+            //Today and clear
+            today: 'Hoje',
+            clear: 'Limpar',
+            close: 'Fechar',
+            //The format to show on the `input` element
+            format: 'd mmmm, yyyy'
+        });
+    </script>
+</body>
+</html>

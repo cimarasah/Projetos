@@ -1,0 +1,5 @@
+C:\Users\Cimara Sá\Documents\Visual Studio 2015\Projects\Cardiodata\Cardiodata.Modelo\bin\Release\Cardiodata.Modelo.dll
+C:\Users\Cimara Sá\Documents\Visual Studio 2015\Projects\Cardiodata\Cardiodata.Modelo\bin\Release\Cardiodata.Modelo.pdb
+C:\Users\Cimara Sá\Documents\Visual Studio 2015\Projects\Cardiodata\Cardiodata.Modelo\obj\Release\Cardiodata.Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Cimara Sá\Documents\Visual Studio 2015\Projects\Cardiodata\Cardiodata.Modelo\obj\Release\Cardiodata.Modelo.dll
+C:\Users\Cimara Sá\Documents\Visual Studio 2015\Projects\Cardiodata\Cardiodata.Modelo\obj\Release\Cardiodata.Modelo.pdb

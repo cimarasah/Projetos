@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="connectionAzure-Web.config Connection String" description="connectionAzure Connection String used in web.config by the application to access the database." defaultValue=" Server=tcp:cfadxf9dkk.database.windows.net,1433;Database=Cardiodata;User ID=CSA@cfadxf9dkk;Password=Cih96042489;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Cimara\ Sá\\documents\\visual\ studio\ 2015\\Projects\\Cardiodata\\Cardiodata\.Web\\Cardiodata\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='connectionAzure']/@connectionString" />
+  </parameter>
+  <parameter name="Cardiodata.Entity.CardiodataContexto-Web.config Connection String" description="Cardiodata.Entity.CardiodataContexto Connection String used in web.config by the application to access the database." defaultValue="Cardiodata.Entity.CardiodataContexto_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Cimara\ Sá\\documents\\visual\ studio\ 2015\\Projects\\Cardiodata\\Cardiodata\.Web\\Cardiodata\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Cardiodata.Entity.CardiodataContexto']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Cimara\ Sá\\documents\\visual\ studio\ 2015\\Projects\\Cardiodata\\Cardiodata\.Web\\Cardiodata\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
