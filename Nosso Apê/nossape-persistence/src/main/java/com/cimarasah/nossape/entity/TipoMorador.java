@@ -1,8 +1,11 @@
 package com.cimarasah.nossape.entity;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -10,16 +13,19 @@ import javax.persistence.Table;
 public class TipoMorador {
 
 	@Id()
-	private String id;
+	private int id;
 
 	@Column(name="DS_DESCRICAO")
 	private String descricao;
+	
+	@OneToMany(targetEntity=Morador.class, mappedBy="tipoMorador")
+	private Set<Morador> moradores;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -29,5 +35,13 @@ public class TipoMorador {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public Set<Morador> getMoradores() {
+		return moradores;
+	}
+
+	public void setMoradores(Set<Morador> moradores) {
+		this.moradores = moradores;
 	}
 }

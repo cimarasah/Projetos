@@ -1,8 +1,11 @@
 package com.cimarasah.nossape.entity;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -10,16 +13,19 @@ import javax.persistence.Table;
 public class TipoPeriodicidade {
 
 	@Id()
-	private String id;
+	private int id;
 
 	@Column(name="DS_PERIODICIDADE")
 	private String periodicidade;
+	
+	@OneToMany(targetEntity=Atividade.class, mappedBy="tipoPeriodicidade")
+	private Set<Atividade> atividades;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -29,5 +35,13 @@ public class TipoPeriodicidade {
 
 	public void setPeriodicidade(String periodicidade) {
 		this.periodicidade = periodicidade;
+	}
+
+	public Set<Atividade> getAtividades() {
+		return atividades;
+	}
+
+	public void setAtividades(Set<Atividade> atividades) {
+		this.atividades = atividades;
 	}
 }
