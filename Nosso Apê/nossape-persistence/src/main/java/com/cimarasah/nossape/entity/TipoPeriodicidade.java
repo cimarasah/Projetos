@@ -14,4 +14,20 @@ public class TipoPeriodicidade {
 
 	@Column(name="DS_PERIODICIDADE")
 	private String periodicidade;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPeriodicidade() {
+		return periodicidade;
+	}
+
+	public void setPeriodicidade(String periodicidade) {
+		this.periodicidade = periodicidade;
+	}
 }
