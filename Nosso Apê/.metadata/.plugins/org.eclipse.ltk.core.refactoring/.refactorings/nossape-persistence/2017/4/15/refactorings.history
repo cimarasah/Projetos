@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.cimarasah.nossape.entity.Tipo_Transacao&apos; to &apos;TipoTransacao&apos;&#x0D;&#x0A;- Original project: &apos;nossape-persistence&apos;&#x0D;&#x0A;- Original element: &apos;com.cimarasah.nossape.entity.Tipo_Transacao&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cimarasah.nossape.entity.TipoTransacao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tipo_Transacao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.cimarasah.nossape.entity{Tipo_Transacao.java[Tipo_Transacao" matchStrategy="1" name="TipoTransacao" qualified="false" references="true" similarDeclarations="false" stamp="1492153359534" textual="false" version="1.0"/>
-</session>
