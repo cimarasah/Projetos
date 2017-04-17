@@ -7,6 +7,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+/**
+ * @author Cimara Sá
+ *
+ */
 @Entity
 @Table(name="DEBITO_PESSOAL_MENSAL")
 public class DebitoPessoalMensal {

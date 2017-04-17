@@ -8,6 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * @author Cimara Sá
+ *
+ */
 @Entity
 @Table(name="TIPO_VARIACAO_CONTA")
 public class TipoVariacaoConta {

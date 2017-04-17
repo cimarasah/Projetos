@@ -11,6 +11,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * @author Cimara Sá
+ *
+ */
 @Entity
 @Table(name="CONTA_MENSAL")
 public class ContaMensal {

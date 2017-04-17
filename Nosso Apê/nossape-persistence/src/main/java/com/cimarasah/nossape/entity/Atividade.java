@@ -9,7 +9,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
+/**
+ * @author Cimara Sá
+ *
+ */
 @Entity
 @Table(name="ATIVIDADE")
 public class Atividade {

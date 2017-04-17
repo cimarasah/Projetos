@@ -9,6 +9,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * @author Cimara Sá
+ *
+ */
 @Entity
 @Table(name="CONTA_FINAL_MENSAL")
 public class ContaFinalMensal {
