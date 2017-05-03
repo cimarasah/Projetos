@@ -1,21 +1,21 @@
-package com.cimarasah.com.enums;
+package com.cimarasah.nossape.enums;
 
-public enum TipoDivisaoContaEnum {
-	PorMorador(1),
-	PorQuarto(2);
+public enum TipoTransacaoEnum {
+	Positivo(1),
+	Negativo(2);
 
 	public int tipo;
 	public String tpDescricao;
-	TipoDivisaoContaEnum(int tipo) {
+	TipoTransacaoEnum(int tipo) {
 		this.tipo = tipo;
 	}
 	public String getTpDescricao(){
 		switch (this.tipo) {
 		case 1:
-			tpDescricao="Por morador";
+			tpDescricao="Positivo";
 			break;
 		case 2:
-			tpDescricao="Por quarto";
+			tpDescricao="Negativo";
 			break;
 		default:
 			tpDescricao = null;

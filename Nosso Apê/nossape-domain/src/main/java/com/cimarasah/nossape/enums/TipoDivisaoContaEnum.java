@@ -1,26 +1,21 @@
-package com.cimarasah.com.enums;
+package com.cimarasah.nossape.enums;
 
-public enum TipoPeriodicidadeEnum {
-	Diaria(1),
-	Semanal(2),
-	Mensal(3);
+public enum TipoDivisaoContaEnum {
+	PorMorador(1),
+	PorQuarto(2);
 
 	public int tipo;
 	public String tpDescricao;
-	TipoPeriodicidadeEnum(int tipo) {
+	TipoDivisaoContaEnum(int tipo) {
 		this.tipo = tipo;
 	}
-	
 	public String getTpDescricao(){
 		switch (this.tipo) {
 		case 1:
-			tpDescricao="Diaria";
+			tpDescricao="Por morador";
 			break;
 		case 2:
-			tpDescricao="Semanal";
-			break;	
-		case 3:
-			tpDescricao="Mensal";
+			tpDescricao="Por quarto";
 			break;
 		default:
 			tpDescricao = null;

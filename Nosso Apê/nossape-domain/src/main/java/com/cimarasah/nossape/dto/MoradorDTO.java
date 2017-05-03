@@ -2,7 +2,7 @@ package com.cimarasah.nossape.dto;
 
 import java.util.Date;
 
-import com.cimarasah.com.enums.TipoMoradorEnum;
+import com.cimarasah.nossape.enums.TipoMoradorEnum;
 
 public class MoradorDTO {
 

@@ -1,22 +1,21 @@
-package com.cimarasah.com.enums;
+package com.cimarasah.nossape.enums;
 
-public enum TipoPagamentoEnum {
-	Total(1),
-	Parcial(2);
+public enum TipoMoradorEnum {
+	Administrador(1),
+	Usuario(2);
 
 	public int tipo;
 	public String tpDescricao;
-	TipoPagamentoEnum(int tipo) {
+	TipoMoradorEnum(int tipo) {
 		this.tipo = tipo;
 	}
-	
 	public String getTpDescricao(){
 		switch (this.tipo) {
 		case 1:
-			tpDescricao="Total";
+			tpDescricao="Administrador";
 			break;
 		case 2:
-			tpDescricao="Parcial";
+			tpDescricao="Usuario";
 			break;
 		default:
 			tpDescricao = null;
