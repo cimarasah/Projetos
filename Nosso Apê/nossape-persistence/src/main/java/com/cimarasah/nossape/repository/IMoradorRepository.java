@@ -16,7 +16,7 @@ import com.cimarasah.nossape.entity.Morador;
  *
  */
 @Repository
-public interface IMoradorRepository extends JpaRepository<Morador,Integer>{
+interface IMoradorRepository extends JpaRepository<Morador,Integer>{
 	
 	Morador findById(int id);
 	
